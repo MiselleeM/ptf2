@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Michelle - 243303651403</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Portofolio Seni Michelle</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#gallery">Galeri</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Halo, saya Michelle, seorang seniman dan ilustrator dari Indonesia yang sangat mencintai dunia menggambar. Saya mengkhususkan diri pada ilustrasi, namun saya juga senang mengeksplorasi berbagai gaya dan bentuk seni untuk memperluas wawasan dan meningkatkan kemampuan artistik saya.</p>
+      <p>NIM: 243303651403</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>Clip Studio Paint</li>
+        <li>Editing Video</li>
+        <li>Animasi</li>
+        <li>Photoshop</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Galeri Karya</h2>
+      <div class="portfolio">
+        <div class="card" onclick="openModal(0)">
+          <img src="ai hoshino.jpg" alt="Karya 1">
+          <div class="card-content">
+            <h3>Karya 1</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(1)">
+          <img src="tomasalpaedisong.jpg" alt="Karya 2">
+          <div class="card-content">
+            <h3>Karya 2</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(2)">
+          <img src="harassment is not a compliment.jpg" alt="Karya 3">
+          <div class="card-content">
+            <h3>Karya 3</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(3)">
+          <img src="micia1.jpg" alt="Karya 4">
+          <div class="card-content">
+            <h3>Karya 4</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(4)">
+          <img src="yoimiya.jpg" alt="Karya 5">
+          <div class="card-content">
+            <h3>Karya 5</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(5)">
+          <img src="harris hbd2.jpg" alt="Karya 6">
+          <div class="card-content">
+            <h3>Karya 6</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(6)">
+          <img src="COMMS 3 amore bonus.jpg" alt="Karya 7">
+          <div class="card-content">
+            <h3>Karya 7</h3>
+          </div>
+        </div>
+        <div class="card" onclick="openModal(7)">
+          <img src="spotifycover.jpg" alt="Karya 8">
+          <div class="card-content">
+            <h3>Karya 8</h3>
+          </div>
+        </div>
+      </div>
+      <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+          <img id="modalImage" src="" alt="">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDesc"></p>
+          <button onclick="closeModal()">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
