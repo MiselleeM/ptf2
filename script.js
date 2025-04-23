@@ -1,12 +1,12 @@
  const data = [
-  { title: "Karya 1", image: "ai hoshino.jpg", description: "Perlu waktu lama untuk menggambar ini" },
-  { title: "Karya 2", image: "tomasalpaedisong.jpg", description: "Masih belajar realisme" },
-  { title: "Karya 3", image: "harassment is not a compliment.jpg", description: "Untuk sampul novel tugas sekolah" },
-  { title: "Karya 4", image: "micia1.jpg", description: "Dibuat untuk sahabatku" },
-  { title: "Karya 5", image: "yoimiya.jpg", description: "Karya lama" },
-  { title: "Karya 6", image: "harris hbd2.jpg", description: "Dibuat untuk teman" },
-  { title: "Karya 7", image: "COMMS 3 amore bonus.jpg", description: "Komisi pertama saya" },
-  { title: "Karya 8", image: "spotifycover.jpg", description: "Cover playlist pribadi" },
+  { title: "Art 1", image: "ai hoshino.jpg", description: "it took me ages to draw this" },
+  { title: "Art 2", image: "tomasalpaedisong.jpg", description: "still tryna improve on realism" },
+  { title: "Art 3", image: "harassment is not a compliment.jpg", description: "used to make this for schoolwork novel cover" },
+  { title: "Art 4", image: "micia1.jpg", description: "i drew this for my bestfriend hehe" },
+  { title: "Art 5", image: "yoimiya.jpg", description: "old drawing" },
+  { title: "Art 6", image: "harris hbd2.jpg", description: "i drew this for my friend too" },
+  { title: "Art 7", image: "COMMS 3 amore bonus.jpg", description: "my first ever commision" },
+  { title: "Art 8", image: "spotifycover.jpg", description: "my playlist cover" },
 ];
 
 function openModal(index) {
@@ -37,7 +37,7 @@ document.addEventListener("keydown", function(e) {
 
 // Dark mode toggle
 const toggle = document.createElement("button");
-toggle.textContent = "🌙 Mode Gelap";
+toggle.textContent = "🌙 ";
 toggle.style.position = "fixed";
 toggle.style.top = "10px";
 toggle.style.right = "10px";
@@ -52,5 +52,5 @@ document.body.appendChild(toggle);
 
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
-  toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ Mode Terang" : "🌙 Mode Gelap";
+  toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️ " : "🌙 ";
 });
